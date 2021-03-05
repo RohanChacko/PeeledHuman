@@ -23,15 +23,37 @@
   We introduce PeeledHuman - a novel shape representation of the human body that is robust to self-occlusions. PeeledHuman encodes the human body as a set of Peeled Depth and RGB maps in 2D, obtained by performing raytracing on the 3D body model and extending each ray beyond its first intersection. This formulation allows us to handle self-occlusions efficiently compared to other representations. Given a monocular RGB image, we learn these Peeled maps in an end-to-end generative adversarial fashion using our novel framework - PeelGAN. We train PeelGAN using a 3D Chamfer loss and other 2D losses to generate multiple depth values per-pixel and a corresponding RGB field per-vertex in a dual-branch setup. In our simple non-parametric solution, the generated Peeled Depth maps are back-projected to 3D space to obtain a complete textured 3D shape. The corresponding RGB maps provide vertex-level texture details. We compare our method with current parametric and non-parametric methods in 3D reconstruction and find that we achieve state-of-theart-results. We demonstrate the effectiveness of our representation on publicly available BUFF and MonoPerfCap datasets as well as loose clothing data collected by our calibrated multi-Kinect setup.
 </p>
 
+### Testing
+
+Install environment
+```
+conda env create -f environment.yml
+```
+
+Run the inference script
+```python
+python test.py                            \
+  --test_folder_path <path/to/images/dir> \
+  --results_dir <path/to/results/dir>     \
+  --name <checkpoint name>                \
+  --direction AtoB                        \
+  --model pix2pix                         \
+  --netG resnet_18blocks                  \
+  --output_nc 4                           \
+  --load_size 512                         \
+  --eval
+```
+
+The script looks for the checkpoint file in checkpoints/<checkpoint/name>
+
 <p><b>BibTeX</b><br>
-  <pre class="bg-light" style="padding: 5px 10.5px;">@INPROCEEDINGS {jinka2020peeledhuman,
+  <pre class="bg-light" style="padding: 5px 10.5px;">@inproceedings {jinka2020peeledhuman,
   author = {S. Jinka and R. Chacko and A. Sharma and P. Narayanan},
   booktitle = {2020 International Conference on 3D Vision (3DV)},
   title = {PeeledHuman: Robust Shape Representation for Textured 3D Human Body Reconstruction},
   year = {2020},
   pages = {879-888},
   doi = {10.1109/3DV50981.2020.00098},
-  url = {https://doi.ieeecomputersociety.org/10.1109/3DV50981.2020.00098},
   publisher = {IEEE Computer Society},
   }
   </pre>
