@@ -13,7 +13,7 @@
 <img src="https://rohanchacko.github.io/images/motivation.jpg" width="900px" height="319px">
 <div align="center">
   <span>
-    <a href="https://rohanchacko.github.io/peeledhuman">[Project page]</a>
+    <a href="https://cvit.iiit.ac.in/research/projects/cvit-projects">[Project page]</a>
     <a href="https://rohanchacko.github.io/files/peeledhumans/peeledhuman.pdf">[Paper]</a>
     <a href="https://arxiv.org/abs/2002.06664">[ArXiv]</a>
   </span>
