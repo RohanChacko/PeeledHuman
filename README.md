@@ -59,4 +59,5 @@ The script looks for the checkpoint file in checkpoints/<checkpoint/name>
   </pre>
 </p>
 
-This template was borrowed from [Aakash Kt](https://github.com/AakashKT)
+### Acknowledgements
+Our network derives from the [pix2pix](https://phillipi.github.io/pix2pix/) work and hence builds on the [official PyTorch implementation of pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/). This README template was borrowed from [Aakash Kt](https://github.com/AakashKT). Please open an issue in case of any bugs/queries.
