@@ -29,7 +29,7 @@ Install environment
 ```
 conda env create -f environment.yml
 ```
-Download the checkpoint from [here](https://drive.google.com/file/d/1aqXJ8C3O8XMqKOMNy5ag6fv38VG-a3jg/view?usp=sharing) and store it in `./checkpoints/test/`
+Download the checkpoint from [here](https://drive.google.com/file/d/1aqXJ8C3O8XMqKOMNy5ag6fv38VG-a3jg/view?usp=sharing) and store it in `./checkpoints/test/`. The provided checkpoint was trained on the MonoPerfCap dataset.
 
 Run the inference script
 ```python
