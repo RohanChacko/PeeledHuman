@@ -29,13 +29,14 @@ Install environment
 ```
 conda env create -f environment.yml
 ```
+Download the checkpoint from [here](https://drive.google.com/file/d/1aqXJ8C3O8XMqKOMNy5ag6fv38VG-a3jg/view?usp=sharing) and store it in `./checkpoints/test/`
 
 Run the inference script
 ```python
 python test.py                            \
   --test_folder_path <path/to/images/dir> \
   --results_dir <path/to/results/dir>     \
-  --name <checkpoint name>                \
+  --name test                             \
   --direction AtoB                        \
   --model pix2pix                         \
   --netG resnet_18blocks                  \
