@@ -15,7 +15,7 @@
   <span>
     [<a href="http://cvit.iiit.ac.in/research/projects/cvit-projects/peeledhuman-robust-shape-representation-for-textured-3d-human-body-reconstruction">Project page</a>]
     [<a href="https://ieeexplore.ieee.org/document/9320367">Paper</a>]
-    <a href="https://arxiv.org/abs/2002.06664">[ArXiv]</a>
+    [<a href="https://arxiv.org/abs/2002.06664">ArXiv</a>]
   </span>
 </div>
 <hr>
