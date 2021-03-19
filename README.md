@@ -27,12 +27,12 @@
 
 Install environment
 ```
-conda env create -f environment.yml
+$ conda env create -f environment.yml
 ```
 Download the checkpoint from [here](https://drive.google.com/file/d/1aqXJ8C3O8XMqKOMNy5ag6fv38VG-a3jg/view?usp=sharing) and store it in `./checkpoints/test/`. The provided checkpoint was trained on the MonoPerfCap dataset.
 
 Run the inference script
-```python
+```$ python
 python test.py                            \
   --test_folder_path <path/to/images/dir> \
   --results_dir <path/to/results/dir>     \
@@ -47,7 +47,7 @@ python test.py                            \
 
 The script looks for the checkpoint file in checkpoints/<checkpoint/name>
 
-<p><b>BibTeX</b><br>
+<p><b>Citation</b><br>
   <pre class="bg-light" style="padding: 5px 10.5px;">@inproceedings {jinka2020peeledhuman,
   author = {S. Jinka and R. Chacko and A. Sharma and P. Narayanan},
   booktitle = {2020 International Conference on 3D Vision (3DV)},
